@@ -8,8 +8,8 @@ import { SITE_TITLE } from '../consts';
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/blog">The Lab</HeaderLink>
+			<HeaderLink href="/about">About Me</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://www.linkedin.com/in/pjh1294" target="_blank">
@@ -43,6 +43,7 @@ import { SITE_TITLE } from '../consts';
 	h2 {
 		margin: 0;
 		font-size: 1em;
+		flex: 1;
 	}
 
 	h2 a,
@@ -68,9 +69,18 @@ import { SITE_TITLE } from '../consts';
 	.social-links a {
 		display: flex;
 	}
+	.social-links {
+    flex: 1;
+    justify-content: flex-end;
+	}
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
 		}
+	}
+	.internal-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 	}
 </style>
